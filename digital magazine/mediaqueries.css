@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .nav-links ul {
         flex-direction: column;
         align-items: center;
@@ -32,4 +32,122 @@
     .image-container {
         grid-template-columns: 1fr;
     }
+} */
+
+
+@media screen and (max-width:1200px) {
+    .content-text {
+        column-count:2;
+        font-size:14px;
+    }
+
+    .images img, .author-image img {
+        width:450px;
+        height:450px;
+    }
+    blockquote {
+        width:70%;
+        font-size:2.5rem;
+        line-height:2.5rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .nav-container {
+        flex-direction:column;
+        align-items: center;
+        text-align:center;
+        padding:5px;
+    }
+
+    .nav-links ul {
+        margin-top:10px;
+        gap:0.5rem;
+    }
+    .nav-links li{
+        display: block;
+        margin:5px 0;
+    }
+    .nav-links li a {
+        padding: 0.3rem 0.7rem;
+        font-size:0.9rem;
+    }
+
+    .content-text {
+        column-count:1;
+        font-size:13px;
+        margin:10px;
+        padding:15px;
+    }
+
+    .images img, .author-image img {
+        width:300px;
+        height:300px;
+    }
+
+    .author-container {
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+        padding:15px;
+    }
+
+    .author-description h3{
+        margin-top:20px;
+    }
+
+    .author-description p{
+        margin:10px 15px;
+    }
+
+    blockquote {
+        width:90%;
+        font-size:1.8rem;
+        line-height:2rem;
+        margin: 3rem auto;
+    }
+}
+
+@media screen and (max-width:480px) {
+    
+    
+    .nav-container {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .logo {
+        width:100%;
+        text-align:center;
+        margin-bottom:5px;
+    }
+
+    .nav-links {
+        width:100%;
+    }
+
+    .nav-links ul {
+        justify-content: center;
+    }
+    body {
+        margin:10px;
+}
+
+.content-container {
+    margin-top:50px;
+    font-size:24px;
+}
+  .images img, .author-image img {
+    width:250px;
+    height:250px;
+  }
+
+  .contact-icons {
+    gap:1rem;
+  }
+
+  blockquote {
+    font-size:1.5rem;
+    line-height:1.8rem;
+  }
 }

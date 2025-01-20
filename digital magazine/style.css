@@ -23,6 +23,10 @@ body{
     background-color: rgb(239, 239, 245);
     cursor: default;
 }
+.logo h3 {
+    margin:0;
+    padding:5px;
+}
 
 .nav-links {
     background-color: rgb(250, 247, 247);
@@ -33,6 +37,7 @@ body{
 .nav-links li{
     list-style: none;
     display: inline-block;
+    white-space: nowrap;
     
 }
 
@@ -42,9 +47,22 @@ body{
     padding:7px;
     cursor: pointer; 
    padding:0.5rem 1rem;
+   transition: background-color 0.3s ease;
 }
 .nav-links li a.active {
     background-color: #f0f0;
+}
+
+.nav-links li a:hover {
+    background-color: rgb(177, 172, 172);
+}
+
+.nav-links ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap:1rem;
+    margin:0;
+    padding:0;
 }
     a{
         transition: background-color 0.3s ease-in-out;
@@ -61,6 +79,7 @@ body{
         top:0;
         background-color: white;
         /* height: auto; */
+        width:100%;
    }
 .nav-container {
     display: flex;
@@ -68,6 +87,8 @@ body{
     justify-content: space-between;
     /* border: 1px solid rgb(175, 171, 171); */
     padding: 10px;
+    flex-wrap: wrap;
+    align-items: center;
     
 
     
